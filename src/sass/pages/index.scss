@@ -1,0 +1,13 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+
+.home-content {
+    position: relative;
+    &__image {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+    }
+}

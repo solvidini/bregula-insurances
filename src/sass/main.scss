@@ -1,0 +1,10 @@
+@import './variables';
+@import './mixins';
+@import './animations';
+
+@import './containers/layout';
+
+@import './components/header.scss';
+@import './components/navigation.scss';
+
+@import './pages/index.scss';
