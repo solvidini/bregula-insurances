@@ -11,18 +11,9 @@ const IndexPage = () => (
     <h1>Breguła Ubezpieczenia</h1>
     <div className="home-content">
       <h3>Ubezpieczamy osoby inwidualne oraz firmy</h3>
-      <p>Now go build something great.</p>
+      <p>Reprehenderit aliqua non id aliqua non id</p>
       <img className="home-content__image" src={Image} alt="Insurance Image" />
     </div>
-    <Link to="/" className="link" activeClassName="active">
-      Home
-    </Link>
-    <Link to="/about-us/" className="link" activeClassName="active">
-      O nas
-    </Link>
-    <Link to="/experience/" className="link" activeClassName="active">
-      Doświadczenie
-    </Link>
   </Layout>
 )
 

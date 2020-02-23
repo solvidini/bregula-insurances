@@ -35,8 +35,8 @@ body {
 }
 
 ::selection {
-  background-color: rgba($color-primary, .8);
-  color: $color-white;
+  background-color: $color-primary;
+  color: white;
 }
 
 .hero {
