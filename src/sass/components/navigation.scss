@@ -81,13 +81,13 @@
             display: none;
         }
 
-        &:hover &-content {
+        &:hover &__content {
             opacity: 1;
             transform: translateY(0);
             z-index: 100;
         }
 
-        &-content {
+        &__content {
             position: absolute;
             top: 2rem;
             left: -1rem;
@@ -105,7 +105,7 @@
             color: $color-white;
         }
 
-        &-item {
+        &__item {
             position: relative;
             padding-left: 2.5rem;
 
@@ -123,6 +123,18 @@
                     text-decoration: underline;
                 }
             }
+        }
+
+        &__name {
+            // text-align: center;
+            margin-left: 3rem;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+            // &:nth-child(2) {
+            //     margin-top: 4rem;
+            //     margin-bottom: 3rem;
+            // }
         }
     }
 

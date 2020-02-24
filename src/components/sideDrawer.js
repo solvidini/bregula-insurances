@@ -17,13 +17,21 @@ const SideDrawer = props => {
         <nav className="side-drawer__nav">
           <Navigation clicked={props.closed} />
           <div className="side-drawer__contact">
-            <a href="tel:+48666666666" className="side-drawer__link">
+            <a href="tel:+48511141613" className="side-drawer__link">
               <FontAwesomeIcon icon="phone-alt" className="side-drawer__fa" />
-              666&nbsp;666&nbsp;666
+              Telefon - Bartosz
             </a>
-            <a href="mailto:bregula@onet.pl" className="side-drawer__link">
+            <a href="mailto:bregulabartosz@gmail.com" className="side-drawer__link">
               <FontAwesomeIcon icon="envelope" className="side-drawer__fa" />
-              bregula@onet.pl
+              Email - Bartosz
+            </a>
+            <a href="tel:+48510242555" className="side-drawer__link">
+              <FontAwesomeIcon icon="phone-alt" className="side-drawer__fa" />
+              Telefon - Beata
+            </a>
+            <a href="mailto:beatapegaz@op.pl" className="side-drawer__link">
+              <FontAwesomeIcon icon="envelope" className="side-drawer__fa" />
+              Email - Beata
             </a>
           </div>
         </nav>

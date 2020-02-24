@@ -14,8 +14,8 @@ const IndexPage = () => (
     <div className="home-content">
       <h3>Ubezpieczamy osoby inwidualne oraz firmy</h3>
       <div className="home-content__container">
-        <div className="home-content__text">
-          <p>
+        <div className="home-content__links">
+          <h4 className="home-content__links-title">
             Skład naszej oferty&nbsp;&nbsp;
             <Link to="/about-us">
               <FontAwesomeIcon
@@ -23,27 +23,60 @@ const IndexPage = () => (
                 className="home-content__icon-link"
               />
             </Link>
-          </p>
-          <p>Nasze doświadczenie&nbsp;&nbsp;
+          </h4>
+          <h4 className="home-content__links-title">
+            Nasze doświadczenie&nbsp;&nbsp;
             <Link to="/experience">
               <FontAwesomeIcon
                 icon="arrow-right"
                 className="home-content__icon-link"
               />
-            </Link></p>
-          <div>
-            <p>Skontaktuj się z nami:</p>
-            <a href="tel:+48666666666" className="home-content__contact">
-              <FontAwesomeIcon
-                icon="phone-alt"
-                className="home-content__icon"
-              />
-              +48&nbsp;666&nbsp;666&nbsp;666
-            </a>
-            <a href="mailto:bregula@onet.pl" className="home-content__contact">
-              <FontAwesomeIcon icon="envelope" className="home-content__icon" />
-              bregula@onet.pl
-            </a>
+            </Link>
+          </h4>
+          <div className="home-content__contact">
+            <h4 className="home-content__contact-title">
+              Skontaktuj się z nami:
+            </h4>
+            <div>
+              <h5 className="home-content__contact-name">Bartosz</h5>
+              <a href="tel:+48511141613" className="home-content__contact-link">
+                <FontAwesomeIcon
+                  icon="phone-alt"
+                  className="home-content__icon"
+                />
+                +48&nbsp;511&nbsp;141&nbsp;613
+              </a>
+              <a
+                href="mailto:bregulabartosz@gmail.com"
+                className="home-content__contact-link"
+              >
+                <FontAwesomeIcon
+                  icon="envelope"
+                  className="home-content__icon"
+                />
+                bregulabartosz@gmail.com
+              </a>
+            </div>
+            <div>
+              <h5 className="home-content__contact-name">Beata</h5>
+              <a href="tel:+48510242555" className="home-content__contact-link">
+                <FontAwesomeIcon
+                  icon="phone-alt"
+                  className="home-content__icon"
+                />
+                +48&nbsp;501&nbsp;242&nbsp;555
+              </a>
+              <a
+                href="mailto:beatapegaz@op.pl"
+                className="home-content__contact-link"
+              >
+                <FontAwesomeIcon
+                  icon="envelope"
+                  className="home-content__icon"
+                />
+                beatapegaz@op.pl
+              </a>
+            </div>
           </div>
         </div>
         <div className="home-content__image">
