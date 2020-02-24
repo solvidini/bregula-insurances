@@ -1,15 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../containers/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Doświadczenie" />
     <h1>Doświadczenie</h1>
-    <p>
+    <article className="experience">
       Sunt minim anim veniam Lorem cupidatat duis. Veniam ad exercitation do
       minim ex consectetur. Ullamco ullamco duis non ipsum eu fugiat Lorem non.
       Labore reprehenderit in deserunt amet occaecat officia tempor cupidatat
@@ -28,17 +26,7 @@ const IndexPage = () => (
       Ullamco minim eiusmod adipisicing qui reprehenderit in duis fugiat qui
       anim. Veniam quis do laborum anim consequat cillum sit. Elit magna officia
       minim.
-    </p>
-
-    <Link to="/" className="link" activeClassName="active">
-      Home
-    </Link>
-    <Link to="/about-us/" className="link" activeClassName="active">
-      O nas
-    </Link>
-    <Link to="/experience/" className="link" activeClassName="active">
-      Doświadczenie
-    </Link>
+    </article>
   </Layout>
 )
 

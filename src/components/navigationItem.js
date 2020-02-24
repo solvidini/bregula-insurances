@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 
 const NavigationItem = props => {
   return (
-    <li className="main-header__nav-item">
+    <li className="navigation-item">
       <Link
         to={props.to}
-        className="main-header__nav-link"
-        activeClassName="main-header__nav-link--active"
+        className="navigation-link"
+        activeClassName="navigation-link--active"
       >
         {props.children}
       </Link>

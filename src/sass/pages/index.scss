@@ -3,11 +3,68 @@
 
 .home-content {
     position: relative;
+
+    &__container {
+        display: flex;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        flex: 0 0 30%;
+        margin-top: 9rem;
+        font-size: 1.8rem;
+        color: $color-grey;
+
+        @include respond(phone) {
+            flex: 1;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            font-size: 1.9rem;
+            display: inline-block;
+        }
+    }
+
     &__image {
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 70%;
+        flex: 1;
+        // margin: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__contact {
+        color: $color-grey;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 1rem;
+        display: inline-block;
+
+        transition: all .2s ease;
+
+        &:hover {
+            color: black;
+            transform: scale(1.1);
+        }
+    }
+
+    &__icon-link {
+        color: $color-grey;
+        transition: all .2s ease;
+
+        &:hover {
+            color: black;
+            transform: scale(1.1);
+        }
+    }
+
+    &__icon {
+        margin-right: 1rem;
     }
 }

@@ -1,0 +1,37 @@
+@import '../mixins';
+@import '../variables';
+
+.about-us {
+    font-size: $medium-font-size;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.offer {
+    margin-bottom: $default-margin-bottom;
+    font-size: $medium-font-size;
+
+    &__sub {
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        list-style-position: inside;
+        list-style-image: url('../images/list-style.png');
+    }
+    
+    &__item {
+        line-height: 2;
+        font-weight: 600;
+
+        transition: all .2s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+            &--brackets {
+                color: $color-primary;
+                font-weight: 400;
+            }
+    }
+}

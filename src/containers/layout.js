@@ -5,11 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../components/header"
+import Footer from "../components/footer"
+import SideDrawer from "../components/sideDrawer"
 import "../sass/main.scss"
 
 const Layout = props => {
@@ -22,25 +24,38 @@ const Layout = props => {
       }
     }
   `)
+  const [sideDrawerIsVisible, setSideDrawerIsVisible] = useState(false)
+
+  const sideDrawerToggleHandler = () => {
+    setSideDrawerIsVisible(!sideDrawerIsVisible)
+  }
+
+  const sideDrawerClosedHandler = () => {
+    setSideDrawerIsVisible(false)
+  }
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div className={props.home ? "hero" : ""}>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        sideDrawerTogglerClicked={sideDrawerToggleHandler}
+        sideDrawerOpened={sideDrawerIsVisible}
+      />
+      <SideDrawer
+        opened={sideDrawerIsVisible}
+        closed={sideDrawerClosedHandler}
+      />
+      <div className="content">
         <main
           style={{
             margin: `0 auto`,
-            maxWidth: '92rem',
+            maxWidth: "92rem",
             paddingTop: "2rem",
           }}
         >
           {props.children}
         </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </div>
     </>
   )

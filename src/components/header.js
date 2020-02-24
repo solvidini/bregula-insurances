@@ -2,36 +2,32 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import Navigation from './navigation';
+import Navigation from "./navigation"
+import DrawerToggler from "./drawerToggler"
 
 const Header = props => (
-  <header
-    className="main-header"
-  >
-    <div
-      className="main-header__toolbar"
-      style={{
-        // margin: `0 auto`,
-        // maxWidth: 960,
-        // padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <header className="main-header">
+    <div className="main-header__toolbar">
       <div>
         <Link
           to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
-            fontSize: '2rem',
-            fontWeight: '600'
+            fontSize: "2rem",
+            fontWeight: "600",
           }}
         >
           LOGO
         </Link>
       </div>
       <nav className="main-header__nav">
-        <Navigation/>
+        <Navigation />
       </nav>
+      <DrawerToggler
+        sideDrawerOpened={props.sideDrawerOpened}
+        clicked={props.sideDrawerTogglerClicked}
+      />
     </div>
   </header>
 )

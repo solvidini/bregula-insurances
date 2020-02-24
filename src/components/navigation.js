@@ -7,25 +7,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navigation = props => {
   return (
-    <ul className="main-header__nav-list">
+    <ul className="navigation-list">
       <NavigationItem to="/">Home</NavigationItem>
       <NavigationItem to="/about-us">O&nbsp;nas</NavigationItem>
       <NavigationItem to="/experience">Doświadczenie</NavigationItem>
-      <li className="main-header__nav-dropdown">
+      <li className="navigation-dropdown">
         <span>
           Kontakt
           <img
-            className="main-header__nav-arrow"
+            className="navigation-arrow"
             src={arrowDown}
             alt="Arrow-Down"
           />
         </span>
-        <div className="main-header__nav-dropdown-content">
-          <div className="main-header__nav-dropdown-item">
-            <a href="tel:+48666666666"><FontAwesomeIcon icon="phone-alt" className="main-header__nav-fa"/>+48&nbsp;666&nbsp;666&nbsp;666</a>
+        <div className="navigation-dropdown-content">
+          <div className="navigation-dropdown-item">
+            <a href="tel:+48666666666"><FontAwesomeIcon icon="phone-alt" className="navigation-fa"/>+48&nbsp;666&nbsp;666&nbsp;666</a>
           </div>
-          <div className="main-header__nav-dropdown-item">
-            <a href="mailto:bregula@onet.pl"><FontAwesomeIcon icon="envelope" className="main-header__nav-fa"/>bregula@onet.pl</a>
+          <div className="navigation-dropdown-item">
+            <a href="mailto:bregula@onet.pl"><FontAwesomeIcon icon="envelope" className="navigation-fa"/>bregula@onet.pl</a>
           </div>
         </div>
       </li>

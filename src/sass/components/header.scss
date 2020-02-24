@@ -14,10 +14,25 @@
     background: linear-gradient(120deg, $color-primary 0%, $color-primary 60%, $color-secondary 60%);
     box-shadow: 0 .1rem .7rem .2rem rgba(0, 0, 0, 0.4);
 
+
     &__toolbar {
         width: 92rem;
         margin: 0 auto;
         display: flex;
         margin-top: -.2rem;
+
+        @include respond(phone) {
+            justify-content: space-between;
+        }
+    }
+
+    &__nav {
+        text-decoration: none;
+        font-style: inherit;
+        height: 100%;
+    
+        @include respond(phone) {
+            display: none;
+        }
     }
 }

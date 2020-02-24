@@ -32,6 +32,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: $color-grey-dark;
+}
+
+.content {
+  background-color: white;
 }
 
 ::selection {
@@ -68,6 +74,12 @@ h1 {
   letter-spacing: .5rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 4.5rem;
+    letter-spacing: .2rem;
+    text-align: center;
+  }
 }
 
 h2 {
@@ -82,13 +94,13 @@ h3 {
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: .2rem;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   text-transform: uppercase;
   color: $color-primary;
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: $medium-font-size;
 }
 
 img {
