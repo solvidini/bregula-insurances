@@ -10,7 +10,7 @@ const Navigation = props => {
     <ul className="navigation-list">
       <NavigationItem to="/">Home</NavigationItem>
       <NavigationItem to="/about-us">O&nbsp;nas</NavigationItem>
-      <NavigationItem to="/experience">Doświadczenie</NavigationItem>
+      <NavigationItem to="/offer">Oferta</NavigationItem>
       <li className="navigation-dropdown">
         <span>
           Kontakt

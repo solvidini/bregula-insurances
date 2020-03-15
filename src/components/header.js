@@ -4,6 +4,7 @@ import React from "react"
 
 import Navigation from "./navigation"
 import DrawerToggler from "./drawerToggler"
+import Logo from './logo'
 
 const Header = props => (
   <header className="main-header">
@@ -18,7 +19,7 @@ const Header = props => (
             fontWeight: "600",
           }}
         >
-          LOGO
+          <Logo />
         </Link>
       </div>
       <nav className="main-header__nav">

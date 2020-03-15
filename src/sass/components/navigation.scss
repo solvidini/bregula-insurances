@@ -5,6 +5,7 @@
     &-list {
         list-style: none;
         display: flex;
+        align-items: center;
         height: 100%;
 
         @include respond(phone) {
@@ -16,7 +17,6 @@
 
     &-item {
         padding-left: 2.5rem;
-        height: 100%;
 
         @include respond(phone) {
             width: 100%;
@@ -70,7 +70,6 @@
         position: relative;
         padding-left: 2.5rem;
         padding-right: 1rem;
-        height: 100%;
         font-size: 1.8rem;
         color: $color-white;
         font-weight: 400;

@@ -17,7 +17,7 @@ const IndexPage = () => (
         <div className="home-content__links">
           <h4 className="home-content__links-title">
             Skład naszej oferty&nbsp;&nbsp;
-            <Link to="/about-us">
+            <Link to="/offer">
               <FontAwesomeIcon
                 icon="arrow-right"
                 className="home-content__icon-link"
@@ -26,7 +26,7 @@ const IndexPage = () => (
           </h4>
           <h4 className="home-content__links-title">
             Nasze doświadczenie&nbsp;&nbsp;
-            <Link to="/experience">
+            <Link to="/about-us">
               <FontAwesomeIcon
                 icon="arrow-right"
                 className="home-content__icon-link"
