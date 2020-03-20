@@ -13,7 +13,7 @@ import transport from "../images/offer/transport.jpg"
 
 const Offer = () => (
   <Layout>
-    <SEO title="Oferta" />
+    <SEO title="Oferta" description="W skład naszej oferty wchodzą ubezpieczenia: komunikacyjne (samochody, motory, itp), majątek (domy, mieszkania), firmy (środki trwałe/obrotowe, majątek, komunikacja), życie (grupowe, indywidualne, zdrowotne), ubezpieczenia grupowe dla firm, podróżne."/>
     <div className="offer-title-container">
       <h2 className="offer-title">Co oferujemy?</h2>
       <div className="offer-title__underline"></div>

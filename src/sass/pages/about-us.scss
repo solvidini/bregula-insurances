@@ -63,7 +63,6 @@
     @include respond(phone) {
         text-align: left;
         line-height: 3.5rem;
-        letter-spacing: .2rem;
         font-size: 2.5rem;
     }
 

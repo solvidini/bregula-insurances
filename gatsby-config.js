@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Breguła Ubezpieczenia`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Breguła Ubezpieczenia jest to rodzinna firma, która istnieje na rynku od ponad 25 lat. Ponad 1000 zadowolonych klientów skorzystało z usług naszej firmy. Jesteśmy liderami w branży, o czym świadczą co roczne nagrody i wyróżnienia od wielu towarzystw ubezpieczeniowych. Współpracując z większością z nich (ok 30 różnych firm ubezpieczeniowych), posiadamy kompleksową ochronę dla klienta indywidualnego oraz małych i średnich przedsiębiorstw.`,
     author: `Samuel Kędziora samukedo@gmail.com`,
   },
   plugins: [

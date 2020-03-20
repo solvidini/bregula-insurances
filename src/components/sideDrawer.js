@@ -17,14 +17,6 @@ const SideDrawer = props => {
         <nav className="side-drawer__nav">
           <Navigation clicked={props.closed} />
           <div className="side-drawer__contact">
-            <a href="tel:+48511141613" className="side-drawer__link">
-              <FontAwesomeIcon icon="phone-alt" className="side-drawer__fa" />
-              Telefon - Bartosz
-            </a>
-            <a href="mailto:bregulabartosz@gmail.com" className="side-drawer__link">
-              <FontAwesomeIcon icon="envelope" className="side-drawer__fa" />
-              Email - Bartosz
-            </a>
             <a href="tel:+48510242555" className="side-drawer__link">
               <FontAwesomeIcon icon="phone-alt" className="side-drawer__fa" />
               Telefon - Beata
@@ -32,6 +24,17 @@ const SideDrawer = props => {
             <a href="mailto:beatapegaz@op.pl" className="side-drawer__link">
               <FontAwesomeIcon icon="envelope" className="side-drawer__fa" />
               Email - Beata
+            </a>
+            <a href="tel:+48511141613" className="side-drawer__link">
+              <FontAwesomeIcon icon="phone-alt" className="side-drawer__fa" />
+              Telefon - Bartosz
+            </a>
+            <a
+              href="mailto:bregulabartosz@gmail.com"
+              className="side-drawer__link"
+            >
+              <FontAwesomeIcon icon="envelope" className="side-drawer__fa" />
+              Email - Bartosz
             </a>
           </div>
         </nav>

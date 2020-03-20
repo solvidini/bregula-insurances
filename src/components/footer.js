@@ -17,11 +17,19 @@ const Footer = props => {
       </div>
       <div className="footer__bottom">
         <div className="footer__copyright">
-          Breguła Ubezpieczenia © {new Date().getFullYear()} <span className="mobile-off">-&nbsp;Wszystkie&nbsp;prawa&nbsp;zastrzeżone.</span>
+          Breguła Ubezpieczenia © {new Date().getFullYear()}{" "}
+          <span className="mobile-off">
+            -&nbsp;Wszystkie&nbsp;prawa&nbsp;zastrzeżone.
+          </span>
         </div>
         <div className="footer__made-by">
           Website created by&nbsp;
-          <a target="_blank" rel="noopener noreferrer" href="http://samuelk.pl">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://samuelk.pl"
+            title="Check it out!"
+          >
             &ndash;Samuel&nbsp;Kędziora&ndash;
           </a>
         </div>

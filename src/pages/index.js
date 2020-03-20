@@ -9,7 +9,8 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" description="Breguła Ubezpieczenia jest to rodzinna firma, która istnieje na rynku od ponad 25 lat. Ponad 1000 zadowolonych klientów skorzystało z usług naszej firmy. Ubezpieczamy klientów inwidualnych oraz małe i średnie
+            przedsiębiorstwa."/>
     <div className="home-content">
       <div className="home-content__title-container">
         <h2 className="home-content__title">
@@ -39,26 +40,6 @@ const IndexPage = () => (
           </h4>
           <div className="home-content__contact">
             <div className="home-content__contact-group">
-              <h5 className="home-content__contact-name">Bartosz</h5>
-              <a href="tel:+48511141613" className="home-content__contact-link">
-                <FontAwesomeIcon
-                  icon="phone-alt"
-                  className="home-content__icon"
-                />
-                511&nbsp;141&nbsp;613
-              </a>
-              <a
-                href="mailto:bregulabartosz@gmail.com"
-                className="home-content__contact-link"
-              >
-                <FontAwesomeIcon
-                  icon="envelope"
-                  className="home-content__icon"
-                />
-                bregulabartosz@gmail.com
-              </a>
-            </div>
-            <div className="home-content__contact-group">
               <h5 className="home-content__contact-name">Beata</h5>
               <a href="tel:+48510242555" className="home-content__contact-link">
                 <FontAwesomeIcon
@@ -76,6 +57,26 @@ const IndexPage = () => (
                   className="home-content__icon"
                 />
                 beatapegaz@op.pl
+              </a>
+            </div>
+            <div className="home-content__contact-group">
+              <h5 className="home-content__contact-name">Bartosz</h5>
+              <a href="tel:+48511141613" className="home-content__contact-link">
+                <FontAwesomeIcon
+                  icon="phone-alt"
+                  className="home-content__icon"
+                />
+                511&nbsp;141&nbsp;613
+              </a>
+              <a
+                href="mailto:bregulabartosz@gmail.com"
+                className="home-content__contact-link"
+              >
+                <FontAwesomeIcon
+                  icon="envelope"
+                  className="home-content__icon"
+                />
+                bregulabartosz@gmail.com
               </a>
             </div>
           </div>
