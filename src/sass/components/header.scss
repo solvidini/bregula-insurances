@@ -11,7 +11,7 @@
     z-index: 100;
     letter-spacing: .2rem;
 
-    background: linear-gradient(140deg, $color-primary 0%, $color-primary 60%, $color-secondary 60%);
+    background: linear-gradient(138deg, $color-primary 0%, $color-primary 60%, $color-secondary 60%);
     box-shadow: 0 .1rem .7rem .2rem rgba(0, 0, 0, 0.4);
 
 
@@ -29,7 +29,7 @@
     &__nav {
         text-decoration: none;
         font-style: inherit;
-        height: 8rem;
+        height: 9rem;
     
         @include respond(phone) {
             display: none;

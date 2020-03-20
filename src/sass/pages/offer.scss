@@ -1,5 +1,98 @@
 .offer {
-    margin-bottom: $default-margin-bottom;
+    padding-bottom: 5rem;
     font-size: $medium-font-size;
-    text-align: justify;
+    position: relative;
+    
+    @include respond(tab-port) {
+        margin: 0 2rem;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 5;
+    }
+
+    &-title {
+        font-size: 3rem;
+        letter-spacing: .3rem;
+        color: $color-primary;
+
+        @include respond(tab-port) {
+            margin: 0 2rem 2rem;
+        }
+
+        @include respond(phone) {
+            line-height: 3.5rem;
+            letter-spacing: .2rem;
+            font-size: 2.5rem;
+        }
+
+        &-container {
+            padding: 1rem 0;
+        }
+
+        &__underline {
+            width: 50%;
+            height: 3px;
+            background-color: $color-primary;
+
+            @include respond(phone) {
+                height: 2px;
+            }
+        }
+    }
+
+    &__main {
+        margin: 2rem 0;
+        font-size: 2.6rem;
+        color: $color-primary;
+    }
+
+    &__sub {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    &__list {
+        list-style-position: inside;
+        list-style-image: url('../images/list-style.png');
+    }
+
+    &__item {
+        line-height: 2.5;
+        font-weight: 600;
+        font-size: 2rem;
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+
+        transition: all .2s ease;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        &--brackets {
+            color: $color-primary;
+            font-weight: 400;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        height: 40rem;
+        top: 10%;
+        right: 0;
+        opacity: .5;
+        pointer-events: none;
+
+        @include respond(phone) {
+            height: 40rem;
+            width: auto;
+            right: 0;
+            top: 20%;
+            opacity: .3;
+        }
+    }
 }

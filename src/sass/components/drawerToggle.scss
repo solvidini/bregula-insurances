@@ -14,15 +14,15 @@
 
 .drawer-toggle__icon {
     position: relative;
-    margin-top: 1rem;
+    top: 4rem;
     z-index: 500;
 
     &,
     &::before,
     &::after {
+        background-color: $color-primary;
         width: 5rem;
         height: 3px;
-        background-color: $color-white;
         display: block;
     }
 
@@ -46,19 +46,20 @@
         position: fixed; 
         display: block;
         z-index: 1000;
-        top: 3rem;
         right: 2rem;
-
+        
         & {
             background-color: transparent;
         }
-
+        
         &::before {
+            background-color: $color-white;
             top: 0;
             transform: rotate(-45deg);
         }
 
         &::after {
+            background-color: $color-white;
             top: 0;
             transform: rotate(-135deg);
         }

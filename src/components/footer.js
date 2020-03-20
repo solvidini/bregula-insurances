@@ -17,8 +17,7 @@ const Footer = props => {
       </div>
       <div className="footer__bottom">
         <div className="footer__copyright">
-          Breguła Ubezpieczenia © {new Date().getFullYear()} - Wszystkie prawa
-          zastrzeżone.
+          Breguła Ubezpieczenia © {new Date().getFullYear()} <span className="mobile-off">-&nbsp;Wszystkie&nbsp;prawa&nbsp;zastrzeżone.</span>
         </div>
         <div className="footer__made-by">
           Website created by&nbsp;

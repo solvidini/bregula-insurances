@@ -4,8 +4,50 @@
 .home-content {
     position: relative;
 
+    @include respond(tab-port) {
+        margin: 0 2rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        letter-spacing: .3rem;
+        color: $color-primary;
+
+        @include respond(tab-port) {}
+
+        @include respond(phone) {
+            line-height: 3.5rem;
+            letter-spacing: .2rem;
+            font-size: 2.5rem;
+        }
+
+        &-container {
+            padding: 1rem 0;
+        }
+
+        &-underline {
+            width: 90%;
+            height: 3px;
+            background-color: $color-primary;
+            transform: translateX(12rem);
+
+            @include respond(tab-port) {
+                width: 85%;
+            }
+
+            @include respond(phone) {
+                transform: translate(0);
+                margin: 2rem 10%;
+                height: 2px;
+                width: auto;
+            }
+        }
+    }
+
     &__container {
         display: flex;
+
+        @include respond(tab-port) {}
 
         @include respond(phone) {
             flex-direction: column;
@@ -16,16 +58,30 @@
         flex: 0 0 30%;
         margin-top: 9rem;
         font-size: 1.8rem;
-        color: $color-grey;
 
         @include respond(phone) {
-            flex: 1;
+            flex: auto;
+            margin-top: 2rem;
+        }
+
+        &-item {
+            color: $color-grey;
+            text-decoration: none;
+            transition: all .2s ease;
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
+
+            &:hover {
+                margin-left: 1rem;
+                color: $color-primary;
+            }
         }
 
         &-title {
             margin-bottom: 2rem;
             font-size: 1.9rem;
-            display: inline-block;
             font-weight: 400;
         }
     }
@@ -37,25 +93,44 @@
         img {
             width: 100%;
             height: 100%;
+            opacity: .6;
         }
     }
 
     &__contact {
         &-title {
-            margin-bottom: 2rem;
+            margin-top: 2rem;
             font-size: 1.9rem;
             display: inline-block;
             font-weight: 400;
+            color: $color-grey;
+        }
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5rem;
+
+            @include respond(phone) {
+                margin-top: 2.5rem;
+            }
         }
 
         &-name {
+            margin-left: 1.5rem;
             margin-bottom: 1rem;
             font-size: 1.6rem;
-            text-transform: capitalize;
+            text-transform: uppercase;
+            color: rgba($color-primary, 0.8);
+            letter-spacing: .2rem;
+
+            @include respond(phone) {
+                margin-left: 3rem;
+            }
         }
 
         &-link {
-            margin-left: 1.5rem;
+            margin-left: 3rem;
             color: $color-grey;
             text-decoration: none;
             display: block;
@@ -64,26 +139,29 @@
 
             transition: all .2s ease;
 
+            @include respond(phone) {
+                margin-left: 5rem;
+            }
+
             &:hover {
-                color: black;
-                transform: scale(1.1);
+                color: $color-primary;
+                transform: scale(1.05);
             }
         }
     }
 
-
-
     &__icon-link {
-        color: $color-grey;
+        color: rgba($color-grey, 0.8);
         transition: all .2s ease;
 
         &:hover {
-            color: black;
+            color: $color-primary;
             transform: scale(1.1);
         }
     }
 
     &__icon {
+        color: rgba($color-grey, 0.6);
         margin-right: 1rem;
     }
 }

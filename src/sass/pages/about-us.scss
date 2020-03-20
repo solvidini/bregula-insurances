@@ -2,36 +2,121 @@
 @import '../variables';
 
 .about-us {
-    font-size: $medium-font-size;
-    text-align: justify;
-    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+        margin: 0 2rem;
+    }
+
+    &__content {
+        font-size: $medium-font-size;
+        text-align: justify;
+        margin-bottom: 4rem;
+
+        @include respond(tab-port) {
+            margin: 0 2rem 4rem;
+        }
+
+        &-highlight {
+            font-size: 3rem;
+            color: $color-primary;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        letter-spacing: .3rem;
+        color: $color-primary;
+        text-align: center;
+
+        @include respond(phone) {
+            text-align: left;
+            line-height: 3.5rem;
+            letter-spacing: .2rem;
+            font-size: 2.5rem;
+        }
+
+        &-container {
+            padding: 1rem 0;
+        }
+
+        &-underline {
+            width: 30%;
+            height: 3px;
+            background-color: $color-primary;
+
+            @include respond(phone) {
+                height: 2px;
+                width: 15%;
+            }
+
+            &-container {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    color: $color-primary;
+    text-align: center;
+
+    @include respond(phone) {
+        text-align: left;
+        line-height: 3.5rem;
+        letter-spacing: .2rem;
+        font-size: 2.5rem;
+    }
+
+    &-container {
+        padding: 1rem 0;
+    }
+
+    &__underline {
+        width: 30%;
+        height: 3px;
+        background-color: $color-primary;
+
+        @include respond(phone) {
+            height: 2px;
+            width: 15%;
+        }
+
+        &-container {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 
-.offer {
-    margin-bottom: $default-margin-bottom;
-    font-size: $medium-font-size;
+.owners {
+    display: flex;
+    width: 100%;
+    margin-bottom: 4rem;
 
-    &__sub {
-        margin-bottom: 1rem;
+    @include respond(phone) {
+        flex-direction: column;
     }
 
-    &__list {
-        list-style-position: inside;
-        list-style-image: url('../images/list-style.png');
-    }
-    
     &__item {
-        line-height: 2;
-        font-weight: 600;
+        padding: 1rem;
 
-        transition: all .2s ease;
-
-        &:hover {
-            transform: scale(1.02);
+        @include respond(phone) {
+            width: 70%;
+            margin: 0 auto;
         }
-            &--brackets {
-                color: $color-primary;
-                font-weight: 400;
-            }
+
+        &-image {
+            width: 100%;
+            border-bottom: 2px solid $color-secondary;
+        }
+
+        &-caption {
+            font-size: 2.2rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: .1rem;
+            color: $color-primary;
+        }
     }
 }
