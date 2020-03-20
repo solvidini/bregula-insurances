@@ -38,9 +38,6 @@ const IndexPage = () => (
             </Link>
           </h4>
           <div className="home-content__contact">
-            <h4 className="home-content__contact-title">
-              Skontaktuj się z nami:
-            </h4>
             <div className="home-content__contact-group">
               <h5 className="home-content__contact-name">Bartosz</h5>
               <a href="tel:+48511141613" className="home-content__contact-link">

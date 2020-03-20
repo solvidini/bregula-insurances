@@ -2,8 +2,14 @@ import React from "react"
 
 import Layout from "../containers/layout"
 import SEO from "../components/seo"
+import OfferItem from "../components/offerItem"
 
-import insuranceImage from "../images/insurance-2.png"
+import companyGroup from "../images/offer/company-group.jpg"
+import company from "../images/offer/company.jpg"
+import life from "../images/offer/life.jpg"
+import house from "../images/offer/house.jpg"
+import journey from "../images/offer/journey.jpg"
+import transport from "../images/offer/transport.jpg"
 
 const Offer = () => (
   <Layout>
@@ -23,38 +29,15 @@ const Offer = () => (
         <p className="offer__sub">
           W skład naszej oferty wchodzą ubezpieczenia:
         </p>
-        <ul className="offer__list">
-          <li className="offer__item">
-            Komunikacyjne{" "}
-            <span className="offer__item--brackets">
-              (samochody, motory, itp)
-            </span>
-          </li>
-          <li className="offer__item">
-            Majątek{" "}
-            <span className="offer__item--brackets">(domy, mieszkania)</span>
-          </li>
-          <li className="offer__item">
-            Firmy{" "}
-            <span className="offer__item--brackets">
-              (środki trwałe/obrotowe, majątek, komunikacja)
-            </span>
-          </li>
-          <li className="offer__item">
-            Życie{" "}
-            <span className="offer__item--brackets">
-              (grupowe, indywidualne, zdrowotne)
-            </span>
-          </li>
-          <li className="offer__item">Ubezpieczenia grupowe dla firm</li>
-          <li className="offer__item">Podróżne</li>
-        </ul>
+        <div className="offer__list">
+          <OfferItem image={transport} description="Komunikacyjne" brackets="(samochody, motory, itp)"/>
+          <OfferItem image={house} description="Majątek" brackets="(domy, mieszkania)"/>
+          <OfferItem image={company} description="Firmy" brackets="(środki trwałe/obrotowe, majątek, komunikacja)"/>
+          <OfferItem image={life} description="Życie" brackets="(grupowe, indywidualne, zdrowotne)"/>
+          <OfferItem image={companyGroup} description="Ubezpieczenia grupowe dla firm"/>
+          <OfferItem image={journey} description="Podróżne"/>
+        </div>
       </div>
-      <img
-        className="offer__image"
-        src={insuranceImage}
-        alt="Insurance Image"
-      />
     </article>
   </Layout>
 )

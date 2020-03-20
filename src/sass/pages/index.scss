@@ -88,7 +88,6 @@
 
     &__image {
         flex: 1;
-        // margin: auto;
 
         img {
             width: 100%;
@@ -98,13 +97,7 @@
     }
 
     &__contact {
-        &-title {
-            margin-top: 2rem;
-            font-size: 1.9rem;
-            display: inline-block;
-            font-weight: 400;
-            color: $color-grey;
-        }
+        margin-top: 4rem;
 
         &-group {
             display: flex;
@@ -121,7 +114,7 @@
             margin-bottom: 1rem;
             font-size: 1.6rem;
             text-transform: uppercase;
-            color: rgba($color-primary, 0.8);
+            color: rgba($color-primary, 0.85);
             letter-spacing: .2rem;
 
             @include respond(phone) {
