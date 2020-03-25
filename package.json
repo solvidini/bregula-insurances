@@ -1,7 +1,6 @@
 {
   "name": "bregula-insurance",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Breguła Ubezpieczenia jest to rodzinna firma, która istnieje na rynku od ponad 25 lat. Ponad 1000 zadowolonych klientów skorzystało z usług naszej firmy. Jesteśmy liderami w branży, o czym świadczą co roczne nagrody i wyróżnienia od wielu towarzystw ubezpieczeniowych. Współpracując z większością z nich (ok 30 różnych firm ubezpieczeniowych), posiadamy kompleksową ochronę dla klienta indywidualnego oraz małych i średnich przedsiębiorstw.",
   "version": "1.0.0",
   "author": "Samuel Kędziora <samukedo@gmail.com>",
   "dependencies": {
@@ -28,7 +27,11 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "insurances",
+    "bregula",
+    "samukedo",
+    "ubezpieczenia"
   ],
   "scripts": {
     "build": "gatsby build",

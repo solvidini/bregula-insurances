@@ -25,9 +25,9 @@ const Navigation = props => {
             </a>
           </div>
           <div className="navigation-dropdown__item">
-            <a href="mailto:beatapegaz@op.pl">
+            <a href="mailto:beata.bregula@superpolisa.pl">
               <FontAwesomeIcon icon="envelope" className="navigation-fa" />
-              beatapegaz@op.pl
+              beata.bregula@superpolisa.pl
             </a>
           </div>
           <h5
@@ -43,9 +43,9 @@ const Navigation = props => {
             </a>
           </div>
           <div className="navigation-dropdown__item">
-            <a href="mailto:bregulabartosz@gmail.com">
+            <a href="mailto:bartosz.bregula@superpolisa.pl">
               <FontAwesomeIcon icon="envelope" className="navigation-fa" />
-              bregulabartosz@gmail.com
+              bartosz.bregula@superpolisa.pl
             </a>
           </div>
         </div>

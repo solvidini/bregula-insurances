@@ -21,7 +21,7 @@ const SideDrawer = props => {
               <FontAwesomeIcon icon="phone-alt" className="side-drawer__fa" />
               Telefon - Beata
             </a>
-            <a href="mailto:beatapegaz@op.pl" className="side-drawer__link">
+            <a href="mailto:beata.bregula@superpolisa.pl" className="side-drawer__link">
               <FontAwesomeIcon icon="envelope" className="side-drawer__fa" />
               Email - Beata
             </a>
@@ -30,7 +30,7 @@ const SideDrawer = props => {
               Telefon - Bartosz
             </a>
             <a
-              href="mailto:bregulabartosz@gmail.com"
+              href="mailto:bartosz.bregula@superpolisa.pl"
               className="side-drawer__link"
             >
               <FontAwesomeIcon icon="envelope" className="side-drawer__fa" />

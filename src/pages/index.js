@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../containers/layout"
-import Image from "../images/insurance.png"
+import Image from "../images/insurance3.png"
 import "../utils/fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import SEO from "../components/seo"
@@ -49,14 +49,14 @@ const IndexPage = () => (
                 501&nbsp;242&nbsp;555
               </a>
               <a
-                href="mailto:beatapegaz@op.pl"
+                href="mailto:beata.bregula@superpolisa.pl"
                 className="home-content__contact-link"
               >
                 <FontAwesomeIcon
                   icon="envelope"
                   className="home-content__icon"
                 />
-                beatapegaz@op.pl
+                beata.bregula@superpolisa.pl
               </a>
             </div>
             <div className="home-content__contact-group">
@@ -69,14 +69,14 @@ const IndexPage = () => (
                 511&nbsp;141&nbsp;613
               </a>
               <a
-                href="mailto:bregulabartosz@gmail.com"
+                href="mailto:bartosz.bregula@superpolisa.pl"
                 className="home-content__contact-link"
               >
                 <FontAwesomeIcon
                   icon="envelope"
                   className="home-content__icon"
                 />
-                bregulabartosz@gmail.com
+                bartosz.bregula@superpolisa.pl
               </a>
             </div>
           </div>

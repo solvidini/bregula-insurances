@@ -2,7 +2,8 @@ import React from "react"
 
 import Layout from "../containers/layout"
 import SEO from "../components/seo"
-import Bartek from "../images/bartek.png"
+import Bartek from "../images/bartek.jpg"
+import Beata from "../images/beata.jpg"
 
 const AboutUs = () => (
   <Layout>
@@ -20,7 +21,7 @@ const AboutUs = () => (
       </div>
       <div className="owners">
         <figure className="owners__item">
-          <img src={Bartek} alt="Beata" className="owners__item-image" />
+          <img src={Beata} alt="Beata" className="owners__item-image" />
           <figcaption className="owners__item-caption">Beata</figcaption>
         </figure>
         <figure className="owners__item">
