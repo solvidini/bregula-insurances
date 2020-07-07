@@ -12,6 +12,7 @@
         font-size: 3rem;
         letter-spacing: .3rem;
         color: $color-primary;
+        animation: slideIn 1s ease-in-out;
 
         @include respond(tab-port) {}
 
@@ -58,6 +59,7 @@
         flex: 0 0 30%;
         margin-top: 9rem;
         font-size: 1.8rem;
+        animation: appear 1s ease;
 
         @include respond(phone) {
             flex: auto;
@@ -88,6 +90,7 @@
 
     &__image {
         flex: 1;
+        animation: appear 1s ease;
 
         img {
             width: 100%;

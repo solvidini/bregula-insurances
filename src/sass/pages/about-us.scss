@@ -27,6 +27,7 @@
         letter-spacing: .3rem;
         color: $color-primary;
         text-align: center;
+        animation: slideIn 1s ease;
 
         @include respond(phone) {
             text-align: left;
@@ -93,6 +94,7 @@
     justify-content: space-evenly;
     width: 100%;
     margin: 4rem 0;
+    animation: appear 1s ease;
 
     @include respond(phone) {
         flex-direction: column;
