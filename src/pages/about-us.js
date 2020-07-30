@@ -2,8 +2,8 @@ import React from "react"
 
 import Layout from "../containers/layout"
 import SEO from "../components/seo"
-import Bartek from "../images/bartek.jpg"
-import Beata from "../images/beata.jpg"
+import Bartek from "../images/bartek.png"
+import Beata from "../images/beata.png"
 
 const AboutUs = () => (
   <Layout>
