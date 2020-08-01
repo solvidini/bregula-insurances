@@ -1,4 +1,4 @@
-# Bregula Insurances
+# Insurances
 My first ever static website made in Gatsby for Breguła Ubezpieczenia - insurance company.
 	
 ## Technologies
