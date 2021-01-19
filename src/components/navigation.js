@@ -11,6 +11,7 @@ const Navigation = props => {
       <NavigationItem to="/">Home</NavigationItem>
       <NavigationItem to="/about-us">O&nbsp;nas</NavigationItem>
       <NavigationItem to="/offer">Oferta</NavigationItem>
+      <NavigationItem to="/partners">Partnerzy</NavigationItem>
       <li className="navigation-dropdown">
         <span>
           Kontakt

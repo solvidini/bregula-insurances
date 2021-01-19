@@ -87,6 +87,7 @@
             border-radius: 3px;
             overflow: hidden;
             animation: appear 1s ease-in-out;
+            transition: all 1s ease;
 
             @include respond(phone) {
                 width: 98%;

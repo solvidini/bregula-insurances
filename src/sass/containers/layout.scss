@@ -38,6 +38,13 @@ body {
 
 .content {
   background-color: white;
+
+  &__main {
+    margin: 0 auto;
+    max-width: 92rem;
+    padding-top: 2rem;
+    transition: all 1s ease;
+  }
 }
 
 ::selection {

@@ -54,6 +54,41 @@
             flex-direction: column;
         }
     }
+	
+	&__superpolisa {
+        margin-top: 3rem;
+        margin-bottom: -2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @include respond(phone) {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        & > img {
+            width: 20%;
+
+            @include respond(tab-port) {
+                width: 30%;
+            }
+            @include respond(phone) {
+                width: 45%;
+            }
+        }
+
+        & > span {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+
+            @include respond(phone) {
+                font-size: 1.8rem;
+            }
+        }
+    }
 
     &__links {
         flex: 0 0 30%;

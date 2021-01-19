@@ -46,15 +46,7 @@ const Layout = props => {
         closed={sideDrawerClosedHandler}
       />
       <div className="content">
-        <main
-          style={{
-            margin: `0 auto`,
-            maxWidth: "92rem",
-            paddingTop: "2rem",
-          }}
-        >
-          {props.children}
-        </main>
+        <main className="content__main">{props.children}</main>
         <Footer />
       </div>
     </>

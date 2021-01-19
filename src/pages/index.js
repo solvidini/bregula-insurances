@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Layout from "../containers/layout"
 import Image from "../images/insurance3.png"
 import "../utils/fontawesome"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import SEO from "../components/seo"
+import superpolisa from '../images/partners/superpolisa.png';
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,10 @@ const IndexPage = () => (
           Ubezpieczamy osoby inwidualne oraz&nbsp;firmy
         </h2>
         <div className="home-content__title-underline"></div>
+      </div>
+      <div className="home-content__superpolisa">
+        <span>We współpracy z</span>
+        <img src={superpolisa} alt="Superpolisa Ubezpieczenia" />
       </div>
       <div className="home-content__container">
         <div className="home-content__links">

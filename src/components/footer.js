@@ -30,7 +30,7 @@ const Footer = props => {
             href="http://samuelk.pl"
             title="Check it out!"
           >
-            &ndash;Samuel&nbsp;Kędziora&ndash;
+            &ndash;samuelk.pl&ndash;
           </a>
         </div>
       </div>

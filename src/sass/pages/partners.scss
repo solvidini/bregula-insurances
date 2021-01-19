@@ -1,0 +1,90 @@
+.partners {
+    padding-bottom: 5rem;
+    font-size: $medium-font-size;
+    position: relative;
+
+    @include respond(tab-port) {
+        margin: 0 2rem;
+    }
+
+    @include respond(phone) {
+        padding-bottom: 0;
+    }
+
+    &-title {
+        font-size: 3rem;
+        letter-spacing: .3rem;
+        color: $color-primary;
+        animation: slideIn 1s ease;
+
+        @include respond(tab-port) {
+            margin: 0 2rem 2rem;
+        }
+
+        @include respond(phone) {
+            line-height: 3.5rem;
+            letter-spacing: .2rem;
+            font-size: 2.5rem;
+        }
+
+        &-container {
+            padding: 1rem 0;
+        }
+
+        &__underline {
+            width: 40%;
+            height: 3px;
+            background-color: $color-primary;
+            margin-left: 2rem;
+
+            @include respond(phone) {
+                height: 2px;
+            }
+        }
+    }
+
+    &__main {
+        margin: 2rem 2rem 0;
+        font-size: 2.6rem;
+        color: $color-primary;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+
+        @include respond(phone) {
+            margin-bottom: 0;
+        }
+
+        &-item {
+            width: 20%;
+            margin: 1%;
+            transition: .2s ease all;
+            animation: appear 1s ease-in-out;
+
+            @include respond(tab-port) {
+                width: 31%;
+                margin: 1%
+            }
+
+            @include respond(phone) {
+                width: 46%;
+                margin: 1%
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &-image {
+                width: 100%;
+            }
+        }
+    }
+
+}
