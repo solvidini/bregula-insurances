@@ -1,68 +1,64 @@
-@import '../variables';
-@import '../mixins';
-
 .drawer-toggle__button {
-    display: none;
-    position: relative;
-    height: 100%;
-    cursor: pointer;
+  display: none;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
 
-    @include respond(phone) {
-        display: block;
-    }
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .drawer-toggle__icon {
-    position: relative;
-    top: 4rem;
-    z-index: 500;
+  position: relative;
+  top: 4rem;
+  z-index: 500;
 
-    &,
-    &::before,
-    &::after {
-        background-color: $color-primary;
-        width: 5rem;
-        height: 3px;
-        display: block;
-    }
+  &,
+  &::before,
+  &::after {
+    background-color: $color-primary;
+    width: 5rem;
+    height: 3px;
+    display: block;
+  }
 
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        transition: all .4s;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.4s;
+  }
+
+  &::before {
+    top: -1.25rem;
+  }
+
+  &::after {
+    top: 1.25rem;
+  }
+
+  &--active {
+    position: fixed;
+    display: block;
+    z-index: 1000;
+    right: 2rem;
+
+    & {
+      background-color: transparent;
     }
 
     &::before {
-        top: -1.25rem;
+      background-color: $color-white;
+      top: 0;
+      transform: rotate(-45deg);
     }
 
     &::after {
-        top: 1.25rem;
+      background-color: $color-white;
+      top: 0;
+      transform: rotate(-135deg);
     }
-
-    &--active {
-        position: fixed; 
-        display: block;
-        z-index: 1000;
-        right: 2rem;
-        
-        & {
-            background-color: transparent;
-        }
-        
-        &::before {
-            background-color: $color-white;
-            top: 0;
-            transform: rotate(-45deg);
-        }
-
-        &::after {
-            background-color: $color-white;
-            top: 0;
-            transform: rotate(-135deg);
-        }
-
-    }
+  }
 }

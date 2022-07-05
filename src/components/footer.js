@@ -27,10 +27,10 @@ const Footer = props => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="http://samuelk.pl"
+            href="https://front-up.pro"
             title="Check it out!"
           >
-            &ndash;samuelk.pl&ndash;
+            &ndash;Front Up!&ndash;
           </a>
         </div>
       </div>
